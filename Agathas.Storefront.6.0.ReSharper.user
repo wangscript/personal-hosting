@@ -1,0 +1,191 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:ISQL.cs" caret="1053" fromTop="28" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:ISpecification.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:Specification.cs" caret="1772" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:AndSpecification.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:TrueSpecification.cs" caret="1704" fromTop="36" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:NotSpecification.cs" caret="1875" fromTop="12" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:CompositeSpecification.cs" caret="1689" fromTop="39" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:OrSpecification.cs" caret="2098" fromTop="11" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Specifications/f:DirectSpecification.cs" caret="1784" fromTop="17" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IAggregateRoot.cs" caret="87" fromTop="4" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:BusinessRule.cs" caret="0" fromTop="0" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/d:Mocks/f:MockTestEntity.cs" caret="315" fromTop="11" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="975" fromTop="22" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="1889" fromTop="24" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IRepository.cs" caret="72" fromTop="2" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IUnitOfWork.cs" caret="0" fromTop="0" />
+      <File id="00A977EF-1BA4-4222-89D0-F70150A30DA0/f:Default.aspx" caret="0" fromTop="0" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="0" fromTop="0" />
+      <File id="00A977EF-1BA4-4222-89D0-F70150A30DA0/f:Site.Master" caret="1121" fromTop="21" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Exceptions/f:ValueObjectIsInvalidException.cs" caret="312" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="6955" fromTop="42" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="10967" fromTop="24" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="11400" fromTop="33" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="10181" fromTop="24" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="10679" fromTop="32" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:SpecificationsTests.cs" caret="1890" fromTop="34" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="996" fromTop="55" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/d:Mocks/f:MockTestEntity.cs" caret="167" fromTop="7" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="386" fromTop="5" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/d:Mocks/f:MockTestEntity.cs" caret="348" fromTop="13" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="1820" fromTop="34" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="2040" fromTop="39" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="2843" fromTop="43" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="2363" fromTop="32" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="2828" fromTop="38" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="1758" fromTop="22" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/f:EntityBaseTests.cs" caret="2268" fromTop="36" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="340" fromTop="7" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="996" fromTop="10" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="1880" fromTop="28" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="1887" fromTop="43" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="1007" fromTop="20" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:EntityBase.cs" caret="843" fromTop="15" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IRepository.cs" caret="48" fromTop="1" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IUnitOfWork.cs" caret="0" fromTop="0" />
+      <File id="00A977EF-1BA4-4222-89D0-F70150A30DA0/f:Site.Master" caret="1130" fromTop="21" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Exceptions/f:ValueObjectIsInvalidException.cs" caret="322" fromTop="9" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Exceptions/f:ValueObjectIsInvalidException.cs" caret="336" fromTop="16" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Exceptions/f:ValueObjectIsInvalidException.cs" caret="165" fromTop="7" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestClassElement" TypeName="Agathas.Storefront.Domain.Tests.EntityBaseTests" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestClassElement" TypeName="Agathas.Storefront.Domain.Tests.SpecificationTests" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.AndSpecification_Creation_NullLeftSpecThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="AndSpecification_Creation_NullLeftSpecThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.AndSpecification_Creation_NullRightSpecThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="AndSpecification_Creation_NullRightSpecThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.AndSpecification_Creation_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="AndSpecification_Creation_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests.BrokenRuleNotNullAndIsAdded" ParentId="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestMethodElement" MethodName="BrokenRuleNotNullAndIsAdded" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.DirectSpecificationConstructorNullSpecThrowArgumentNullExceptionTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="DirectSpecificationConstructorNullSpecThrowArgumentNullExceptionTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.DirectSpecificationConstructorTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="DirectSpecificationConstructorTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests.IsEqualsEntities" ParentId="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestMethodElement" MethodName="IsEqualsEntities" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests.IsNotEqualsEntities" ParentId="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestMethodElement" MethodName="IsNotEqualsEntities" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Creation_FromNegationOperator" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Creation_FromNegationOperator" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Creation_NullCriteriaThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Creation_NullCriteriaThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Creation_NullSpecificationThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Creation_NullSpecificationThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Operators" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Operators" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecificationCreationWithCriteriaTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecificationCreationWithCriteriaTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecificationCreationWithSpecificationTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecificationCreationWithSpecificationTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.OrSpecification_Creation_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="OrSpecification_Creation_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.OrSpecificationCreationNullLeftSpecThrowArgumentNullExceptionTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="OrSpecificationCreationNullLeftSpecThrowArgumentNullExceptionTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.OrSpecificationCreationNullRightSpecThrowArgumentNullExceptionTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="OrSpecificationCreationNullRightSpecThrowArgumentNullExceptionTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.Specification_AndOperator_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="Specification_AndOperator_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.Specification_OrOperator_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="Specification_OrOperator_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.TrueSpecification_Creation_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="TrueSpecification_Creation_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="public" priority="283" />
+      <Item value="interface" priority="61" />
+      <Item value="prop" priority="63" />
+      <Item value="string" priority="159" />
+      <Item value="ctor" priority="159" />
+      <Item value="this" priority="127" />
+      <Item value="property" priority="31" />
+      <Item value="rule" priority="63" />
+      <Item value="TId`0" priority="127" />
+      <Item value="class" priority="31" />
+      <Item value="get" priority="32" />
+      <Item value="set" priority="32" />
+      <Item value="IEnumerable" priority="63" />
+      <Item value="BusinessRule`0" priority="127" />
+      <Item value="IEntity" priority="31" />
+      <Item value="private" priority="31" />
+      <Item value="List" priority="31" />
+      <Item value="_rules" priority="160" />
+      <Item value="new" priority="159" />
+      <Item value="List&lt;BusinessRule&gt;" priority="57" />
+      <Item value="Validate`0" priority="31" />
+      <Item value="protected" priority="31" />
+      <Item value="void" priority="63" />
+      <Item value="override" priority="63" />
+      <Item value="obj" priority="31" />
+      <Item value="entity" priority="191" />
+      <Item value="null" priority="31" />
+      <Item value="is" priority="31" />
+      <Item value="EntityBase" priority="96" />
+      <Item value="ToString`0" priority="31" />
+      <Item value="left" priority="95" />
+      <Item value="right" priority="95" />
+      <Item value="int" priority="63" />
+      <Item value="AddBrokenRule`0" priority="31" />
+      <Item value="BusinessRule" priority="28" />
+      <Item value="Id" priority="159" />
+      <Item value="base" priority="63" />
+      <Item value="Mocks" priority="63" />
+      <Item value="MockTestEntity`0" priority="58" />
+      <Item value="MockTestEntity" priority="57" />
+      <Item value="testEntity" priority="64" />
+      <Item value="Assert`0" priority="223" />
+      <Item value="testEntityTwo" priority="95" />
+      <Item value="testEntityOne" priority="95" />
+      <Item value="bool" priority="31" />
+      <Item value="result" priority="159" />
+      <Item value="TestMethod" priority="31" />
+      <Item value="other" priority="95" />
+      <Item value="Exception`0" priority="31" />
+      <Item value="ctx" priority="31" />
+      <Item value="message" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.BusinessRule">
+      <Item value="Property" priority="53" />
+      <Item value="Rule" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Clear`0" priority="26" />
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.EntityBase`1">
+      <Item value="Equals`0" priority="80" />
+      <Item value="Id" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.Tests.Mocks.MockTestEntity">
+      <Item value="Id" priority="53" />
+      <Item value="Equals`0" priority="26" />
+      <Item value="GetBrokenRules`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsTrue`0" priority="53" />
+      <Item value="IsFalse`0" priority="26" />
+      <Item value="IsNotNull`0" priority="26" />
+      <Item value="AreEqual`1" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Contains`1" priority="26" />
+      <Item value="Count`1" priority="26" />
+      <Item value="First`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:">
+      <Item value="Equals`0" priority="53" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
