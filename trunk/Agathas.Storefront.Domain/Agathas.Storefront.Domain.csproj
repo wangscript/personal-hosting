@@ -33,8 +33,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -42,11 +44,19 @@
   <ItemGroup>
     <Compile Include="BusinessRule.cs" />
     <Compile Include="Contracts\IAggregateRoot.cs" />
-    <Compile Include="EntityBase.cs" />
+    <Compile Include="Entities\EntityBase.cs">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityBase1.cs</LastGenOutput>
+    </Compile>
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="Contracts\ISpecification.cs" />
     <Compile Include="Contracts\ISQL.cs" />
     <Compile Include="Contracts\IUnitOfWork.cs" />
+    <Compile Include="Entities\ObjectChangeTracker.Types.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ObjectChangeTracker.Types.tt</DependentUpon>
+    </Compile>
     <Compile Include="Exceptions\ValueObjectIsInvalidException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specifications\AndSpecification.cs" />
@@ -59,8 +69,17 @@
     <Compile Include="Specifications\ParametersRebinder.cs" />
     <Compile Include="Specifications\Specification.cs" />
     <Compile Include="Specifications\TrueSpecification.cs" />
+    <Compile Include="ValueObjectBase.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entities\ObjectChangeTracker.Types.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ObjectChangeTracker.Types.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

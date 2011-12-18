@@ -9,11 +9,13 @@
 // This code is released under the terms of the MS-LPL license, 
 // http://microsoftnlayerapp.codeplex.com/license
 //===================================================================================
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using Microsoft.Samples.NLayerApp.Domain.Core.Specification;
 
-namespace Microsoft.Samples.NLayerApp.Domain.Core.Specification
+namespace Agathas.Storefront.Domain.Specifications
 {
     /// <summary>
     /// Extension methods for add And and Or with parameters rebinder
