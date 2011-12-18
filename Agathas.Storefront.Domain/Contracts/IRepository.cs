@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-
+using Agathas.Storefront.Domain.Entities;
 namespace Agathas.Storefront.Domain.Contracts
 {
     /// <summary>
@@ -16,7 +16,7 @@ namespace Agathas.Storefront.Domain.Contracts
     /// </remarks>
     /// <typeparam name="TEntity">Type of entity for this repository </typeparam>
     public interface IRepository<TEntity>
-        where TEntity : class
+        where TEntity : class, IAggregateRoot,IObjectWithChangeTracker
     {
         /// <summary>
         /// Get the unit of work in this repository

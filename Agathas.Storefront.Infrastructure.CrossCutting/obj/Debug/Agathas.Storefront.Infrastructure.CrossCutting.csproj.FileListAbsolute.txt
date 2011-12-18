@@ -1,0 +1,5 @@
+D:\Projects\Agathas.Storefront\Agathas.Storefront.Infrastructure.CrossCutting\bin\Debug\Agathas.Storefront.Infrastructure.CrossCutting.dll
+D:\Projects\Agathas.Storefront\Agathas.Storefront.Infrastructure.CrossCutting\bin\Debug\Agathas.Storefront.Infrastructure.CrossCutting.pdb
+D:\Projects\Agathas.Storefront\Agathas.Storefront.Infrastructure.CrossCutting\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Agathas.Storefront\Agathas.Storefront.Infrastructure.CrossCutting\obj\Debug\Agathas.Storefront.Infrastructure.CrossCutting.dll
+D:\Projects\Agathas.Storefront\Agathas.Storefront.Infrastructure.CrossCutting\obj\Debug\Agathas.Storefront.Infrastructure.CrossCutting.pdb

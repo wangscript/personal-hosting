@@ -1,6 +1,6 @@
 ﻿namespace Agathas.Storefront.Domain.Contracts
 {
-    interface IAggregateRoot
+    public interface IAggregateRoot
     {
 
     }

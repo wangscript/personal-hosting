@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Agathas.Storefront.Domain
+namespace Agathas.Storefront.Domain.Entities
 {
     /// <summary>
     /// Contain base of logic for validating an entity
@@ -12,7 +12,7 @@ namespace Agathas.Storefront.Domain
         private readonly List<BusinessRule> _rules;
 
 
-        public TId Id { get; set; }
+        public virtual TId Id { get; set; }
 
         protected EntityBase()
         {
