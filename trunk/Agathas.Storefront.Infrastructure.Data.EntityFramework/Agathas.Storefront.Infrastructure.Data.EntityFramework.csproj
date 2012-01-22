@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork\EFUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
@@ -53,6 +54,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agathas.Storefront.Domain\Agathas.Storefront.Domain.csproj">
+      <Project>{EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B}</Project>
+      <Name>Agathas.Storefront.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agathas.Storefront.Infrastructure.Data\Agathas.Storefront.Infrastructure.Data.csproj">
+      <Project>{C0CC74B4-297C-45E2-9379-613BE63E634B}</Project>
+      <Name>Agathas.Storefront.Infrastructure.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

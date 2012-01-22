@@ -22,7 +22,7 @@ namespace Agathas.Storefront.Infrastructure.Data
         where TEntity : class, IAggregateRoot, IObjectWithChangeTracker
     {
 
-        #region
+        #region Fields
 
         private IQueryableUnitOfWork _unitOfWork;
         private readonly ITraceManager _traceManager;
