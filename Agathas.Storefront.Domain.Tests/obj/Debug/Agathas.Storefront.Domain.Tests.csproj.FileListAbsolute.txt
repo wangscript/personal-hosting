@@ -1,9 +1,0 @@
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\bin\Debug\Agathas.Storefront.Domain.Tests.dll
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\bin\Debug\Agathas.Storefront.Domain.Tests.pdb
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\obj\Debug\ResolveAssemblyReference.cache
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\obj\Debug\Agathas.Storefront.Domain.Tests.dll
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\obj\Debug\Agathas.Storefront.Domain.Tests.pdb
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\bin\Debug\Agathas.Storefront.Domain.dll
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\bin\Debug\Agathas.Storefront.Domain.pdb
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\bin\Debug\Agathas.Storefront.Domain_Accessor.dll
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain.Tests\bin\Debug\Agathas.Storefront.Domain_Accessor.pdb

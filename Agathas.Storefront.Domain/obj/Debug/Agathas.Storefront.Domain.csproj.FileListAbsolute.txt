@@ -1,5 +1,0 @@
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain\bin\Debug\Agathas.Storefront.Domain.dll
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain\bin\Debug\Agathas.Storefront.Domain.pdb
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain\obj\Debug\ResolveAssemblyReference.cache
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain\obj\Debug\Agathas.Storefront.Domain.dll
-D:\Projects\Agathas.Storefront\Agathas.Storefront.Domain\obj\Debug\Agathas.Storefront.Domain.pdb

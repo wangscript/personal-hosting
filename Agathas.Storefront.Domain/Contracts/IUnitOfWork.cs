@@ -1,4 +1,5 @@
 ﻿using System;
+using Agathas.Storefront.Domain.Entities;
 
 namespace Agathas.Storefront.Domain.Contracts
 {
@@ -53,6 +54,6 @@ namespace Agathas.Storefront.Domain.Contracts
         /// <typeparam name="TEntity">Type of item</typeparam>
         /// <param name="item">Item with changes</param>
         void RegisterChanges<TEntity>(TEntity item)
-            where TEntity : class;
+            where TEntity : class,IObjectWithChangeTracker;
     }
 }
