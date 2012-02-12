@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="StorefrontShopModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="StorefrontShopModelStoreContainer">
+          <EntitySet Name="Brands" EntityType="StorefrontShopModel.Store.Brands" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Categories" EntityType="StorefrontShopModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Colors" EntityType="StorefrontShopModel.Store.Colors" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Products" EntityType="StorefrontShopModel.Store.Products" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProductTitles" EntityType="StorefrontShopModel.Store.ProductTitles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sizes" EntityType="StorefrontShopModel.Store.Sizes" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Products_ProductTitles" Association="StorefrontShopModel.Store.FK_Products_ProductTitles">
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Sizes" Association="StorefrontShopModel.Store.FK_Products_Sizes">
+            <End Role="Sizes" EntitySet="Sizes" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_Brands" Association="StorefrontShopModel.Store.FK_ProductTitles_Brands">
+            <End Role="Brands" EntitySet="Brands" />
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_Categories" Association="StorefrontShopModel.Store.FK_ProductTitles_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_Colors" Association="StorefrontShopModel.Store.FK_ProductTitles_Colors">
+            <End Role="Colors" EntitySet="Colors" />
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_ProductTitles" Association="StorefrontShopModel.Store.FK_ProductTitles_ProductTitles">
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+            <End Role="ProductTitles1" EntitySet="ProductTitles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Brands">
+          <Key>
+            <PropertyRef Name="BrandId" />
+          </Key>
+          <Property Name="BrandId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Colors">
+          <Key>
+            <PropertyRef Name="ColorId" />
+          </Key>
+          <Property Name="ColorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SizeId" Type="int" Nullable="false" />
+          <Property Name="ProductTitleId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductTitles">
+          <Key>
+            <PropertyRef Name="ProductTitleId" />
+          </Key>
+          <Property Name="ProductTitleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ColorId" Type="int" Nullable="false" />
+          <Property Name="BrandId" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+        </EntityType>
+        <EntityType Name="Sizes">
+          <Key>
+            <PropertyRef Name="SizeId" />
+          </Key>
+          <Property Name="SizeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Products_ProductTitles">
+          <End Role="ProductTitles" Type="StorefrontShopModel.Store.ProductTitles" Multiplicity="1" />
+          <End Role="Products" Type="StorefrontShopModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTitles">
+              <PropertyRef Name="ProductTitleId" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="ProductTitleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Sizes">
+          <End Role="Sizes" Type="StorefrontShopModel.Store.Sizes" Multiplicity="1" />
+          <End Role="Products" Type="StorefrontShopModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sizes">
+              <PropertyRef Name="SizeId" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="SizeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductTitles_Brands">
+          <End Role="Brands" Type="StorefrontShopModel.Store.Brands" Multiplicity="1" />
+          <End Role="ProductTitles" Type="StorefrontShopModel.Store.ProductTitles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Brands">
+              <PropertyRef Name="BrandId" />
+            </Principal>
+            <Dependent Role="ProductTitles">
+              <PropertyRef Name="BrandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductTitles_Categories">
+          <End Role="Categories" Type="StorefrontShopModel.Store.Categories" Multiplicity="1" />
+          <End Role="ProductTitles" Type="StorefrontShopModel.Store.ProductTitles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="ProductTitles">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductTitles_Colors">
+          <End Role="Colors" Type="StorefrontShopModel.Store.Colors" Multiplicity="1" />
+          <End Role="ProductTitles" Type="StorefrontShopModel.Store.ProductTitles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Colors">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="ProductTitles">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductTitles_ProductTitles">
+          <End Role="ProductTitles" Type="StorefrontShopModel.Store.ProductTitles" Multiplicity="1" />
+          <End Role="ProductTitles1" Type="StorefrontShopModel.Store.ProductTitles" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTitles">
+              <PropertyRef Name="ProductTitleId" />
+            </Principal>
+            <Dependent Role="ProductTitles1">
+              <PropertyRef Name="ProductTitleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="StorefrontShopModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="StorefrontUnitOfWork" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Brands" EntityType="StorefrontShopModel.Brand" />
+          <EntitySet Name="Categories" EntityType="StorefrontShopModel.Category" />
+          <EntitySet Name="Colors" EntityType="StorefrontShopModel.Color" />
+          <EntitySet Name="Products" EntityType="StorefrontShopModel.Product" />
+          <EntitySet Name="ProductTitles" EntityType="StorefrontShopModel.ProductTitle" />
+          <EntitySet Name="Sizes" EntityType="StorefrontShopModel.Size" />
+          <AssociationSet Name="FK_ProductTitles_Brands" Association="StorefrontShopModel.FK_ProductTitles_Brands">
+            <End Role="Brands" EntitySet="Brands" />
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_Categories" Association="StorefrontShopModel.FK_ProductTitles_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_Colors" Association="StorefrontShopModel.FK_ProductTitles_Colors">
+            <End Role="Colors" EntitySet="Colors" />
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_ProductTitles" Association="StorefrontShopModel.FK_Products_ProductTitles">
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Sizes" Association="StorefrontShopModel.FK_Products_Sizes">
+            <End Role="Sizes" EntitySet="Sizes" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductTitles_ProductTitles" Association="StorefrontShopModel.FK_ProductTitles_ProductTitles">
+            <End Role="ProductTitles" EntitySet="ProductTitles" />
+            <End Role="ProductTitles1" EntitySet="ProductTitles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="BrandId" />
+          </Key>
+          <Property Name="BrandId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ProductTitles" Relationship="StorefrontShopModel.FK_ProductTitles_Brands" FromRole="Brands" ToRole="ProductTitles" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ProductTitles" Relationship="StorefrontShopModel.FK_ProductTitles_Categories" FromRole="Categories" ToRole="ProductTitles" />
+        </EntityType>
+        <EntityType Name="Color">
+          <Key>
+            <PropertyRef Name="ColorId" />
+          </Key>
+          <Property Name="ColorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ProductTitles" Relationship="StorefrontShopModel.FK_ProductTitles_Colors" FromRole="Colors" ToRole="ProductTitles" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="ProductTitle" Relationship="StorefrontShopModel.FK_Products_ProductTitles" FromRole="Products" ToRole="ProductTitles" />
+          <NavigationProperty Name="Size" Relationship="StorefrontShopModel.FK_Products_Sizes" FromRole="Products" ToRole="Sizes" />
+        </EntityType>
+        <EntityType Name="ProductTitle">
+          <Key>
+            <PropertyRef Name="ProductTitleId" />
+          </Key>
+          <Property Name="ProductTitleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <NavigationProperty Name="Brand" Relationship="StorefrontShopModel.FK_ProductTitles_Brands" FromRole="ProductTitles" ToRole="Brands" />
+          <NavigationProperty Name="Category" Relationship="StorefrontShopModel.FK_ProductTitles_Categories" FromRole="ProductTitles" ToRole="Categories" />
+          <NavigationProperty Name="Color" Relationship="StorefrontShopModel.FK_ProductTitles_Colors" FromRole="ProductTitles" ToRole="Colors" />
+          <NavigationProperty Name="Products" Relationship="StorefrontShopModel.FK_Products_ProductTitles" FromRole="ProductTitles" ToRole="Products" />
+          <NavigationProperty Name="ProductTitles1" Relationship="StorefrontShopModel.FK_ProductTitles_ProductTitles" FromRole="ProductTitles" ToRole="ProductTitles1" />
+          <NavigationProperty Name="ProductTitle1" Relationship="StorefrontShopModel.FK_ProductTitles_ProductTitles" FromRole="ProductTitles1" ToRole="ProductTitles" />
+        </EntityType>
+        <EntityType Name="Size">
+          <Key>
+            <PropertyRef Name="SizeId" />
+          </Key>
+          <Property Name="SizeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Products" Relationship="StorefrontShopModel.FK_Products_Sizes" FromRole="Sizes" ToRole="Products" />
+        </EntityType>
+        <Association Name="FK_ProductTitles_Brands">
+          <End Role="Brands" Type="StorefrontShopModel.Brand" Multiplicity="1" />
+          <End Role="ProductTitles" Type="StorefrontShopModel.ProductTitle" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ProductTitles_Categories">
+          <End Role="Categories" Type="StorefrontShopModel.Category" Multiplicity="1" />
+          <End Role="ProductTitles" Type="StorefrontShopModel.ProductTitle" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ProductTitles_Colors">
+          <End Role="Colors" Type="StorefrontShopModel.Color" Multiplicity="1" />
+          <End Role="ProductTitles" Type="StorefrontShopModel.ProductTitle" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Products_ProductTitles">
+          <End Role="ProductTitles" Type="StorefrontShopModel.ProductTitle" Multiplicity="1" />
+          <End Role="Products" Type="StorefrontShopModel.Product" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Products_Sizes">
+          <End Role="Sizes" Type="StorefrontShopModel.Size" Multiplicity="1" />
+          <End Role="Products" Type="StorefrontShopModel.Product" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ProductTitles_ProductTitles">
+          <End Role="ProductTitles" Type="StorefrontShopModel.ProductTitle" Multiplicity="1" />
+          <End Role="ProductTitles1" Type="StorefrontShopModel.ProductTitle" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTitles">
+              <PropertyRef Name="ProductTitleId" />
+            </Principal>
+            <Dependent Role="ProductTitles1">
+              <PropertyRef Name="ProductTitleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="StorefrontShopModelStoreContainer" CdmEntityContainer="StorefrontUnitOfWork">
+          <EntitySetMapping Name="Brands"><EntityTypeMapping TypeName="StorefrontShopModel.Brand"><MappingFragment StoreEntitySet="Brands">
+            <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Categories"><EntityTypeMapping TypeName="StorefrontShopModel.Category"><MappingFragment StoreEntitySet="Categories">
+            <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Colors"><EntityTypeMapping TypeName="StorefrontShopModel.Color"><MappingFragment StoreEntitySet="Colors">
+            <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Products"><EntityTypeMapping TypeName="StorefrontShopModel.Product"><MappingFragment StoreEntitySet="Products">
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ProductTitles"><EntityTypeMapping TypeName="StorefrontShopModel.ProductTitle"><MappingFragment StoreEntitySet="ProductTitles">
+            <ScalarProperty Name="ProductTitleId" ColumnName="ProductTitleId" />
+            <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Sizes"><EntityTypeMapping TypeName="StorefrontShopModel.Size"><MappingFragment StoreEntitySet="Sizes">
+            <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_ProductTitles_Brands" TypeName="StorefrontShopModel.FK_ProductTitles_Brands" StoreEntitySet="ProductTitles">
+            <EndProperty Name="Brands">
+              <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+            </EndProperty>
+            <EndProperty Name="ProductTitles">
+              <ScalarProperty Name="ProductTitleId" ColumnName="ProductTitleId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ProductTitles_Categories" TypeName="StorefrontShopModel.FK_ProductTitles_Categories" StoreEntitySet="ProductTitles">
+            <EndProperty Name="Categories">
+              <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+            </EndProperty>
+            <EndProperty Name="ProductTitles">
+              <ScalarProperty Name="ProductTitleId" ColumnName="ProductTitleId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ProductTitles_Colors" TypeName="StorefrontShopModel.FK_ProductTitles_Colors" StoreEntitySet="ProductTitles">
+            <EndProperty Name="Colors">
+              <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+            </EndProperty>
+            <EndProperty Name="ProductTitles">
+              <ScalarProperty Name="ProductTitleId" ColumnName="ProductTitleId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Products_ProductTitles" TypeName="StorefrontShopModel.FK_Products_ProductTitles" StoreEntitySet="Products">
+            <EndProperty Name="ProductTitles">
+              <ScalarProperty Name="ProductTitleId" ColumnName="ProductTitleId" />
+            </EndProperty>
+            <EndProperty Name="Products">
+              <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Products_Sizes" TypeName="StorefrontShopModel.FK_Products_Sizes" StoreEntitySet="Products">
+            <EndProperty Name="Sizes">
+              <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+            </EndProperty>
+            <EndProperty Name="Products">
+              <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="StorefrontDataModel">
+        <EntityTypeShape EntityType="StorefrontShopModel.Brand" Width="1.5" PointX="0.75" PointY="1.5" Height="1.5956835937500002" IsExpanded="true" />
+        <EntityTypeShape EntityType="StorefrontShopModel.Category" Width="1.5" PointX="0.75" PointY="4.625" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="StorefrontShopModel.Color" Width="1.5" PointX="0.75" PointY="7" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="StorefrontShopModel.Product" Width="1.5" PointX="5.25" PointY="1.5" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="StorefrontShopModel.ProductTitle" Width="1.5" PointX="3" PointY="1" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="StorefrontShopModel.Size" Width="1.5" PointX="3" PointY="5.5" Height="1.5956835937499996" IsExpanded="true" />
+        <AssociationConnector Association="StorefrontShopModel.FK_ProductTitles_Brands" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.2978417968750002" />
+          <ConnectorPoint PointX="2.7291666666666665" PointY="2.297841796875" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="2.2978417968750002" />
+          <ConnectorPoint PointX="3" PointY="2.2978417968750002" />
+        </AssociationConnector>
+        <AssociationConnector Association="StorefrontShopModel.FK_ProductTitles_Categories" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.625" />
+          <ConnectorPoint PointX="2.625" PointY="4.25" />
+          <ConnectorPoint PointX="2.625" PointY="3.0549189921875008" />
+          <ConnectorPoint PointX="2.7291666666666665" PointY="3.0549189921875004" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="3.0549189921875008" />
+          <ConnectorPoint PointX="3" PointY="3.0549189921875008" />
+        </AssociationConnector>
+        <AssociationConnector Association="StorefrontShopModel.FK_ProductTitles_Colors" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="7.0623066923076925" />
+          <ConnectorPoint PointX="2.8125" PointY="6.4998066923076934" />
+          <ConnectorPoint PointX="2.8125" PointY="1.6176688984374992" />
+          <ConnectorPoint PointX="3" PointY="1.6176688984374992" />
+        </AssociationConnector>
+        <AssociationConnector Association="StorefrontShopModel.FK_Products_ProductTitles" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.297841796875" />
+          <ConnectorPoint PointX="5.25" PointY="2.297841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="StorefrontShopModel.FK_Products_Sizes" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.297841796875" />
+          <ConnectorPoint PointX="6" PointY="6.297841796875" />
+          <ConnectorPoint PointX="6" PointY="3.0956835937499996" />
+        </AssociationConnector>
+        <AssociationConnector Association="StorefrontShopModel.FK_ProductTitles_ProductTitles" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="3.7494921874999996" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="3.9994921874999996" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="3.9994921874999996" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="3.7494921874999996" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

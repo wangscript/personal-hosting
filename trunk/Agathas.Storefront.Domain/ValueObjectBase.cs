@@ -23,7 +23,7 @@ namespace Agathas.Storefront.Domain
 
             if (_businessRules.Count > 0)
             {
-                StringBuilder issues = new StringBuilder();
+                var issues = new StringBuilder();
                 _businessRules.ForEach(rule => issues.AppendLine(rule.Rule));
 
                 throw new ValueObjectIsInvalidException(issues.ToString());

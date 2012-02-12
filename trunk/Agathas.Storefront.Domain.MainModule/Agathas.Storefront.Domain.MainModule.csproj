@@ -33,18 +33,54 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\ICategoryRepository.cs" />
+    <Compile Include="Entities\Brand.cs">
+      <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Category.cs">
+      <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Color.cs">
+      <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Product.cs">
+      <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ProductTitle.cs">
+      <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Size.cs">
+      <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Brand.cs" />
+    <Compile Include="Contracts\IProductAttribute.cs" />
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Color.cs" />
+    <Compile Include="Model\Size.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <None Include="Entities\StorefrontUnitOfWork.Types.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StorefrontUnitOfWork.Types.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Agathas.Storefront.Domain\Agathas.Storefront.Domain.csproj">
+      <Project>{EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B}</Project>
+      <Name>Agathas.Storefront.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

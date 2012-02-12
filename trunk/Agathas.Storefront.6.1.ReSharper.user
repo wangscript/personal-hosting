@@ -1,0 +1,389 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C0CC74B4-297C-45E2-9379-613BE63E634B/d:Extensions/f:IQueryableExtensions.cs" caret="1681" fromTop="0" />
+      <File id="C0CC74B4-297C-45E2-9379-613BE63E634B/f:MemorySet.cs" caret="110" fromTop="5" />
+      <File id="0A2C4E77-BA7B-4155-BBBE-184D91DCE149/d:Mocks/f:MockTestEntity.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:BusinessRule.cs" caret="0" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:IoC/f:IContainer.cs" caret="13" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:IoC/d:Unity/d:LifetimeManagers/f:PerExecutionContextLifetimeManager.cs" caret="5181" fromTop="23" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:IoC/f:IoCFactory.cs" caret="486" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IRepository.cs" caret="2189" fromTop="13" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:IoC/d:Unity/f:IoCUnityContainer.cs" caret="0" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Logging/f:TraceManager.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IAggregateRoot.cs" caret="0" fromTop="0" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:SelfTrackingEntitiesContextExtensions.cs" caret="474" fromTop="15" />
+      <File id="C0CC74B4-297C-45E2-9379-613BE63E634B/f:Repository.cs" caret="3784" fromTop="37" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Contracts/f:IUnitOfWork.cs" caret="2341" fromTop="31" />
+      <File id="C0CC74B4-297C-45E2-9379-613BE63E634B/f:IQueryableUnitOfWork.cs" caret="951" fromTop="20" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Logging/f:ITraceManager.cs" caret="0" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Configuration/f:IApplicationConfiguration.cs" caret="18" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Configuration/f:WebAppConfiguration.cs" caret="72" fromTop="1" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:IEmailService.cs" caret="0" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:SMTPService.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:ValueObjectBase.cs" caret="743" fromTop="27" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Entities/f:EntityBase.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/d:Entities/f:ObjectChangeTracker.Types.cs" caret="0" fromTop="0" />
+      <File id="7282A017-F237-4581-899C-6C40C7C45A59/d:Helpers/f:PriceHelper.cs" caret="236" fromTop="7" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Products/f:IProductAttribute.cs" caret="133" fromTop="4" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Products/f:Brand.cs" caret="544" fromTop="21" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Categories/f:Category.cs" caret="312" fromTop="10" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Categories/d:Contracts/f:ICategoryRepository.cs" caret="266" fromTop="8" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="483" fromTop="13" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:Model/f:Color.cs" caret="843" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="5038" fromTop="41" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="3778" fromTop="21" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="3724" fromTop="11" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="4321" fromTop="32" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="4072" fromTop="23" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="5459" fromTop="15" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="3604" fromTop="26" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="2930" fromTop="18" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="2693" fromTop="14" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="3733" fromTop="15" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Configuration/f:IApplicationConfiguration.cs" caret="18" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Configuration/f:WebAppConfiguration.cs" caret="72" fromTop="1" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:IEmailService.cs" caret="185" fromTop="9" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:IEmailService.cs" caret="0" fromTop="0" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:SMTPService.cs" caret="336" fromTop="17" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:SMTPService.cs" caret="317" fromTop="12" />
+      <File id="E6CC176C-1CBA-4947-B6B6-51CD16501450/d:Email/f:SMTPService.cs" caret="0" fromTop="0" />
+      <File id="EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B/f:ValueObjectBase.cs" caret="752" fromTop="27" />
+      <File id="7282A017-F237-4581-899C-6C40C7C45A59/d:Helpers/f:PriceHelper.cs" caret="0" fromTop="0" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Products/f:IProductAttribute.cs" caret="0" fromTop="0" />
+      <File id="7282A017-F237-4581-899C-6C40C7C45A59/d:Helpers/f:PriceHelper.cs" caret="245" fromTop="7" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Products/f:Brand.cs" caret="237" fromTop="8" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Products/f:IProductAttribute.cs" caret="133" fromTop="4" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Products/f:Brand.cs" caret="553" fromTop="21" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Categories/f:Category.cs" caret="533" fromTop="15" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Categories/f:Category.cs" caret="344" fromTop="10" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Categories/f:Category.cs" caret="672" fromTop="23" />
+      <File id="2C514FCD-23EB-4A39-91C0-FE733ED43885/d:Categories/d:Contracts/f:ICategoryRepository.cs" caret="286" fromTop="10" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="0" fromTop="0" />
+      <File id="B669C444-942A-4206-A66B-786BAE78D0BC/d:UnitOfWork/f:EFUnitOfWork.cs" caret="483" fromTop="13" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False" />
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestClassElement" TypeName="Agathas.Storefront.Domain.Tests.EntityBaseTests" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestClassElement" TypeName="Agathas.Storefront.Domain.Tests.SpecificationTests" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.ValueObjectBaseTest" type="MsTestTestClassElement" TypeName="Agathas.Storefront.Domain.Tests.ValueObjectBaseTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.ValueObjectBaseTest.AddBrokenRuleTest" ParentId="Agathas.Storefront.Domain.Tests.ValueObjectBaseTest" type="MsTestTestMethodElement" MethodName="AddBrokenRuleTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.AndSpecification_Creation_NullLeftSpecThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="AndSpecification_Creation_NullLeftSpecThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.AndSpecification_Creation_NullRightSpecThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="AndSpecification_Creation_NullRightSpecThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.AndSpecification_Creation_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="AndSpecification_Creation_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests.BrokenRuleNotNullAndIsAdded" ParentId="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestMethodElement" MethodName="BrokenRuleNotNullAndIsAdded" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.DirectSpecificationConstructorNullSpecThrowArgumentNullExceptionTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="DirectSpecificationConstructorNullSpecThrowArgumentNullExceptionTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.DirectSpecificationConstructorTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="DirectSpecificationConstructorTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests.IsEqualsEntities" ParentId="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestMethodElement" MethodName="IsEqualsEntities" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.EntityBaseTests.IsNotEqualsEntities" ParentId="Agathas.Storefront.Domain.Tests.EntityBaseTests" type="MsTestTestMethodElement" MethodName="IsNotEqualsEntities" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Creation_FromNegationOperator" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Creation_FromNegationOperator" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Creation_NullCriteriaThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Creation_NullCriteriaThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Creation_NullSpecificationThrowArgumentNullException_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Creation_NullSpecificationThrowArgumentNullException_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecification_Operators" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecification_Operators" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecificationCreationWithCriteriaTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecificationCreationWithCriteriaTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.NotSpecificationCreationWithSpecificationTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="NotSpecificationCreationWithSpecificationTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.OrSpecification_Creation_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="OrSpecification_Creation_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.OrSpecificationCreationNullLeftSpecThrowArgumentNullExceptionTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="OrSpecificationCreationNullLeftSpecThrowArgumentNullExceptionTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.OrSpecificationCreationNullRightSpecThrowArgumentNullExceptionTest" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="OrSpecificationCreationNullRightSpecThrowArgumentNullExceptionTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.Specification_AndOperator_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="Specification_AndOperator_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.Specification_OrOperator_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="Specification_OrOperator_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.ValueObjectBaseTest.ThrowExceptionIfInvalidTest" ParentId="Agathas.Storefront.Domain.Tests.ValueObjectBaseTest" type="MsTestTestMethodElement" MethodName="ThrowExceptionIfInvalidTest" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+        <UnitTestElement Provider="MSTest" Id="Agathas.Storefront.Domain.Tests.SpecificationTests.TrueSpecification_Creation_Test" ParentId="Agathas.Storefront.Domain.Tests.SpecificationTests" type="MsTestTestMethodElement" MethodName="TrueSpecification_Creation_Test" Project="0A2C4E77-BA7B-4155-BBBE-184D91DCE149" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="public" priority="845" />
+      <Item value="interface" priority="61" />
+      <Item value="prop" priority="127" />
+      <Item value="string" priority="542" />
+      <Item value="ctor" priority="223" />
+      <Item value="this" priority="159" />
+      <Item value="property" priority="31" />
+      <Item value="rule" priority="95" />
+      <Item value="TId`0" priority="127" />
+      <Item value="class" priority="63" />
+      <Item value="get" priority="164" />
+      <Item value="set" priority="197" />
+      <Item value="IEnumerable" priority="63" />
+      <Item value="BusinessRule`0" priority="223" />
+      <Item value="IEntity" priority="31" />
+      <Item value="private" priority="223" />
+      <Item value="List" priority="63" />
+      <Item value="_rules" priority="160" />
+      <Item value="new" priority="927" />
+      <Item value="List&lt;BusinessRule&gt;" priority="86" />
+      <Item value="Validate`0" priority="63" />
+      <Item value="protected" priority="95" />
+      <Item value="void" priority="223" />
+      <Item value="override" priority="63" />
+      <Item value="obj" priority="31" />
+      <Item value="entity" priority="191" />
+      <Item value="null" priority="377" />
+      <Item value="is" priority="31" />
+      <Item value="EntityBase" priority="96" />
+      <Item value="ToString`0" priority="63" />
+      <Item value="left" priority="95" />
+      <Item value="right" priority="95" />
+      <Item value="int" priority="190" />
+      <Item value="AddBrokenRule`0" priority="63" />
+      <Item value="BusinessRule" priority="144" />
+      <Item value="Id" priority="159" />
+      <Item value="base" priority="255" />
+      <Item value="Mocks" priority="63" />
+      <Item value="MockTestEntity`0" priority="58" />
+      <Item value="MockTestEntity" priority="57" />
+      <Item value="testEntity" priority="64" />
+      <Item value="Assert`0" priority="383" />
+      <Item value="testEntityTwo" priority="95" />
+      <Item value="testEntityOne" priority="95" />
+      <Item value="bool" priority="31" />
+      <Item value="result" priority="159" />
+      <Item value="TestMethod" priority="31" />
+      <Item value="other" priority="95" />
+      <Item value="Exception`0" priority="31" />
+      <Item value="ctx" priority="95" />
+      <Item value="message" priority="160" />
+      <Item value="abstract" priority="93" />
+      <Item value="ValueObjectBase`0" priority="96" />
+      <Item value="_businessRules" priority="191" />
+      <Item value="if" priority="415" />
+      <Item value="StringBuilder`0" priority="31" />
+      <Item value="StringBuilder" priority="28" />
+      <Item value="issues" priority="63" />
+      <Item value="throw" priority="287" />
+      <Item value="ValueObjectIsInvalidException" priority="28" />
+      <Item value="internal" priority="30" />
+      <Item value="MockValueObject" priority="28" />
+      <Item value="ExpectedException" priority="31" />
+      <Item value="true" priority="63" />
+      <Item value="ValueObjectIsInvalidException`0" priority="31" />
+      <Item value="ValueObjectBase_Accessor" priority="28" />
+      <Item value="CreateValueObjectBase`0" priority="31" />
+      <Item value="PrivateObject" priority="28" />
+      <Item value="target" priority="127" />
+      <Item value="IAggregateRoot`0" priority="63" />
+      <Item value="TEntity`0" priority="505" />
+      <Item value="#region" priority="223" />
+      <Item value="#endregion" priority="191" />
+      <Item value="IQueryableUnitOfWork`0" priority="63" />
+      <Item value="_unitOfWork" priority="255" />
+      <Item value="_traceManager" priority="320" />
+      <Item value="queryableUnitOfWork" priority="96" />
+      <Item value="ITraceManager`0" priority="31" />
+      <Item value="traceManager" priority="95" />
+      <Item value="ArgumentNullException" priority="145" />
+      <Item value="Resources" priority="191" />
+      <Item value="Messages`0" priority="161" />
+      <Item value="typeof" priority="31" />
+      <Item value="&lt;remarks&gt;&lt;/remarks&gt;" priority="25" />
+      <Item value="Agathas" priority="61" />
+      <Item value="Storefront" priority="55" />
+      <Item value="Domain" priority="27" />
+      <Item value="Contracts" priority="27" />
+      <Item value="IRepository" priority="58" />
+      <Item value="IObjectSet" priority="63" />
+      <Item value="objectSet" priority="224" />
+      <Item value="Object`0" priority="64" />
+      <Item value="as" priority="63" />
+      <Item value="query" priority="63" />
+      <Item value="NoTracking" priority="16" />
+      <Item value="return" priority="319" />
+      <Item value="else" priority="63" />
+      <Item value="Exception" priority="57" />
+      <Item value="InvalidOperationException" priority="58" />
+      <Item value="&lt;see cref=&quot;&quot;/&gt;" priority="25" />
+      <Item value="item" priority="537" />
+      <Item value="using" priority="122" />
+      <Item value="Agathas.Storefront.Domain" priority="29" />
+      <Item value="Entities" priority="26" />
+      <Item value="IObjectWithChangeTracker`0" priority="30" />
+      <Item value="virtual" priority="221" />
+      <Item value="Added" priority="16" />
+      <Item value="Deleted" priority="33" />
+      <Item value="CreateSet`0" priority="159" />
+      <Item value="msg" priority="31" />
+      <Item value="Trace`0" priority="223" />
+      <Item value="CheckEntity`0" priority="95" />
+      <Item value="System" priority="30" />
+      <Item value="Linq" priority="26" />
+      <Item value="specification" priority="32" />
+      <Item value="pageIndex" priority="30" />
+      <Item value="ArgumentException" priority="88" />
+      <Item value="pageCount" priority="30" />
+      <Item value="orderByExpression" priority="31" />
+      <Item value="TS`0" priority="63" />
+      <Item value="Infrastructure" priority="27" />
+      <Item value="CrossCutting" priority="27" />
+      <Item value="IoC" priority="27" />
+      <Item value="IContainer`0" priority="27" />
+      <Item value="ObjectContext`0" priority="31" />
+      <Item value="const" priority="63" />
+      <Item value="ConnectionString" priority="63" />
+      <Item value="ContainerName" priority="95" />
+      <Item value="ContextOptions" priority="63" />
+      <Item value="false" priority="63" />
+      <Item value="ObjectMaterialized" priority="31" />
+      <Item value="Initialize`0" priority="95" />
+      <Item value="ExecuteStoreQuery`1" priority="31" />
+      <Item value="ExecuteQuery`1" priority="31" />
+      <Item value="sqlQuery" priority="63" />
+      <Item value="parameters" priority="63" />
+      <Item value="ExecuteStoreCommand`0" priority="31" />
+      <Item value="sqlCommand" priority="31" />
+      <Item value="CreateObjectSet`1" priority="63" />
+      <Item value="Commit`0" priority="31" />
+      <Item value="IApplicationConfiguration`0" priority="31" />
+      <Item value="IEmailService`0" priority="31" />
+      <Item value="SMTPService`0" priority="31" />
+      <Item value="SmtpClient" priority="28" />
+      <Item value="MailMessage`0" priority="31" />
+      <Item value="MailMessage" priority="28" />
+      <Item value="subject" priority="31" />
+      <Item value="from" priority="31" />
+      <Item value="body" priority="31" />
+      <Item value="smtp" priority="31" />
+      <Item value="static" priority="62" />
+      <Item value="decimal" priority="31" />
+      <Item value="price" priority="31" />
+      <Item value="IProductAttribute`0" priority="31" />
+      <Item value="Category`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.BusinessRule">
+      <Item value="Property" priority="80" />
+      <Item value="Rule" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Clear`0" priority="53" />
+      <Item value="Add`0" priority="26" />
+      <Item value="Count" priority="53" />
+      <Item value="ForEach`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.EntityBase`1">
+      <Item value="Equals`0" priority="80" />
+      <Item value="Id" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.Tests.Mocks.MockTestEntity">
+      <Item value="Id" priority="53" />
+      <Item value="Equals`0" priority="26" />
+      <Item value="GetBrokenRules`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsTrue`0" priority="53" />
+      <Item value="IsFalse`0" priority="26" />
+      <Item value="IsNotNull`0" priority="53" />
+      <Item value="AreEqual`1" priority="161" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Contains`1" priority="26" />
+      <Item value="Count`1" priority="26" />
+      <Item value="First`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:">
+      <Item value="Equals`0" priority="53" />
+      <Item value="ChangeTracker" priority="161" />
+      <Item value="MarkAsDeleted`1" priority="26" />
+      <Item value="MarkAsModified`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendLine`0" priority="26" />
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.ValueObjectBase">
+      <Item value="AddBrokenRule`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.ValueObjectBase_Accessor">
+      <Item value="_businessRules" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Agathas.Storefront.Infrastructure.Data.Resources.Messages">
+      <Item value="exception_ContainerCannotBeNull" priority="80" />
+      <Item value="trace_ConstructRepository" priority="26" />
+      <Item value="exception_ItemArgumentIsNull" priority="26" />
+      <Item value="trace_AppliedChangedItemRepository" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Infrastructure.CrossCutting.Logging.ITraceManager">
+      <Item value="TraceInfo`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="InvariantCulture" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Name" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Doc Comment tags">
+      <Item value="&lt;remarks&gt;&lt;/remarks&gt;" priority="4" />
+      <Item value="&lt;see cref=&quot;&quot;/&gt;" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Infrastructure.Data.IQueryableUnitOfWork">
+      <Item value="CreateSet`1" priority="26" />
+      <Item value="RegisterChanges`1" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="MergeOption" priority="53" />
+      <Item value="ApplyChanges`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.Entities.ObjectChangeTracker">
+      <Item value="State" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.IObjectSet`1">
+      <Item value="Attach`0" priority="53" />
+      <Item value="DeleteObject`0" priority="26" />
+      <Item value="Where`1" priority="26" />
+      <Item value="AsQueryable`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Domain.Contracts.ISpecification`1">
+      <Item value="SatisfiedBy`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="AsEnumerable`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Agathas.Storefront.Infrastructure.CrossCutting.IoC.IContainer">
+      <Item value="Resolve`1" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectContextOptions">
+      <Item value="ProxyCreationEnabled" priority="26" />
+      <Item value="LazyLoadingEnabled" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectContext">
+      <Item value="ExecuteStoreQuery`1" priority="26" />
+      <Item value="Dispose`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration.ConfigurationManager">
+      <Item value="AppSettings" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Mail.MailMessage">
+      <Item value="Subject" priority="26" />
+      <Item value="From" priority="26" />
+      <Item value="Body" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Mail.SmtpClient">
+      <Item value="Send`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

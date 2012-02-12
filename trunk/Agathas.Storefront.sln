@@ -40,10 +40,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{4855B3C1-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{58CBA6DE-A6B5-4AED-8865-2D8972498BE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Infrastructure.CrossCutting.IoC", "Agathas.Storefront.Infrastructure.CrossCutting.IoC\Agathas.Storefront.Infrastructure.CrossCutting.IoC.csproj", "{DFA24AD1-F753-43F1-A913-9CC1A11CED0B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Infrastructure.CrossCutting.Cache", "Agathas.Storefront.Infrastructure.CrossCutting.Cache\Agathas.Storefront.Infrastructure.CrossCutting.Cache.csproj", "{0706C890-021F-460F-9395-3F2839151188}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Presentation", "Agathas.Storefront.Presentation.Presenters\Agathas.Storefront.Presentation.csproj", "{0FBB5C1B-4856-4444-8F8D-F13A0EAE2480}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Presentetion.Tests", "Agathas.Storefront.Presentetion.Presenters.Tests\Agathas.Storefront.Presentetion.Tests.csproj", "{D7B3ACC6-017C-4C6D-8A6A-88336CC34316}"
@@ -51,6 +47,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Presentation.UI.Web", "Agathas.Storefront.Presentation.UI.Web\Agathas.Storefront.Presentation.UI.Web.csproj", "{00A977EF-1BA4-4222-89D0-F70150A30DA0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Domain.Tests", "Agathas.Storefront.Domain.Tests\Agathas.Storefront.Domain.Tests.csproj", "{0A2C4E77-BA7B-4155-BBBE-184D91DCE149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agathas.Storefront.Infrastructure", "Agathas.Storefront.Infrastructure\Agathas.Storefront.Infrastructure.csproj", "{7282A017-F237-4581-899C-6C40C7C45A59}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -101,14 +99,6 @@ Global
 		{E6CC176C-1CBA-4947-B6B6-51CD16501450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6CC176C-1CBA-4947-B6B6-51CD16501450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6CC176C-1CBA-4947-B6B6-51CD16501450}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFA24AD1-F753-43F1-A913-9CC1A11CED0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFA24AD1-F753-43F1-A913-9CC1A11CED0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFA24AD1-F753-43F1-A913-9CC1A11CED0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFA24AD1-F753-43F1-A913-9CC1A11CED0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0706C890-021F-460F-9395-3F2839151188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0706C890-021F-460F-9395-3F2839151188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0706C890-021F-460F-9395-3F2839151188}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0706C890-021F-460F-9395-3F2839151188}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FBB5C1B-4856-4444-8F8D-F13A0EAE2480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FBB5C1B-4856-4444-8F8D-F13A0EAE2480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBB5C1B-4856-4444-8F8D-F13A0EAE2480}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -125,6 +115,10 @@ Global
 		{0A2C4E77-BA7B-4155-BBBE-184D91DCE149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A2C4E77-BA7B-4155-BBBE-184D91DCE149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A2C4E77-BA7B-4155-BBBE-184D91DCE149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7282A017-F237-4581-899C-6C40C7C45A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7282A017-F237-4581-899C-6C40C7C45A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7282A017-F237-4581-899C-6C40C7C45A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7282A017-F237-4581-899C-6C40C7C45A59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +129,7 @@ Global
 		{00A977EF-1BA4-4222-89D0-F70150A30DA0} = {43990E84-6760-4A37-B73B-F5AA8103DDCC}
 		{4855B3C1-4847-44EF-97EF-C4FE362BF212} = {80DC5393-2997-4713-8CFC-A1E4609D82F3}
 		{58CBA6DE-A6B5-4AED-8865-2D8972498BE6} = {80DC5393-2997-4713-8CFC-A1E4609D82F3}
+		{7282A017-F237-4581-899C-6C40C7C45A59} = {80DC5393-2997-4713-8CFC-A1E4609D82F3}
 		{EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B} = {BCC5EBCE-CB1A-488D-B0E3-4EBE6EAFC339}
 		{2C514FCD-23EB-4A39-91C0-FE733ED43885} = {BCC5EBCE-CB1A-488D-B0E3-4EBE6EAFC339}
 		{0A2C4E77-BA7B-4155-BBBE-184D91DCE149} = {BCC5EBCE-CB1A-488D-B0E3-4EBE6EAFC339}
@@ -146,7 +141,5 @@ Global
 		{BD3FA58A-B226-4901-BC75-3510F63F3177} = {4855B3C1-4847-44EF-97EF-C4FE362BF212}
 		{C0CC74B4-297C-45E2-9379-613BE63E634B} = {4855B3C1-4847-44EF-97EF-C4FE362BF212}
 		{E6CC176C-1CBA-4947-B6B6-51CD16501450} = {58CBA6DE-A6B5-4AED-8865-2D8972498BE6}
-		{DFA24AD1-F753-43F1-A913-9CC1A11CED0B} = {58CBA6DE-A6B5-4AED-8865-2D8972498BE6}
-		{0706C890-021F-460F-9395-3F2839151188} = {58CBA6DE-A6B5-4AED-8865-2D8972498BE6}
 	EndGlobalSection
 EndGlobal
