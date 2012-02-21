@@ -41,6 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\EntityBase.cs">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityBase1.cs</LastGenOutput>
+    </Compile>
+    <Compile Include="Entities\EntityBase1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ObjectChangeTracker.Types.cs">
+      <DependentUpon>ObjectChangeTracker.Types.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Extensions\IQueryableExtensions.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
     <Compile Include="MemorySet.cs" />
@@ -67,6 +81,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entities\ObjectChangeTracker.Types.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ObjectChangeTracker.Types.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

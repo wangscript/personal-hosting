@@ -30,7 +30,7 @@ namespace Agathas.Storefront.Infrastructure.CrossCutting.IoC.Unity
 
                 //Create root container
             IUnityContainer rootContainer = new UnityContainer();
-            _ContainersDictionary.Add("RootContext", rootContainer);
+            _ContainersDictionary.Add("RootContext", rootContainer); 
 
                 //Create container for real context, child of root container
             IUnityContainer realAppContainer = rootContainer.CreateChildContainer();

@@ -47,7 +47,7 @@
     <Compile Include="AutoMapperBootstrapper.cs" />
     <Compile Include="Contracts\IProductCatalogService.cs" />
     <Compile Include="Formatters\MoneyFormatter.cs" />
-    <Compile Include="Implemintations\ProductCatalogService.cs" />
+    <Compile Include="Implementations\ProductCatalogService.cs" />
     <Compile Include="Mapping\CategoryMapper.cs" />
     <Compile Include="Mapping\IProductAttributeMapper.cs" />
     <Compile Include="Mapping\ProductMapper.cs" />

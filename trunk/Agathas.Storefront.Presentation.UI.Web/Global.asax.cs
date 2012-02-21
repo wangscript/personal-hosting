@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.SessionState;
+using Agathas.Storefront.Infrastructure.CrossCutting.IoC;
 
 namespace Agathas.Storefront.Presentation.UI.Web
 {
     public class Global : System.Web.HttpApplication
     {
+        public static IContainer IoCContainer
+        {
+            get { return IoCFactory.Instance.CurrentContainer; }
+        }
 
         void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
-
+           
         }
 
         void Application_End(object sender, EventArgs e)
