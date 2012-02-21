@@ -40,7 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presenters\BasePresenter.cs" />
+    <Compile Include="Presenters\IPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\IBaseProductCatalogView.cs" />
+    <Compile Include="Views\IHomePageView.cs" />
+    <Compile Include="Views\IProductDetailView.cs" />
+    <Compile Include="Views\IProductSearchResultView.cs" />
+    <Compile Include="Views\IView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agathas.Storefront.AppServices\Agathas.Storefront.AppServices.csproj">
+      <Project>{4ECFBA68-B797-4B95-B717-3B6DD32D98C8}</Project>
+      <Name>Agathas.Storefront.AppServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
