@@ -47,19 +47,18 @@ namespace Agathas.Storefront.Infrastructure.Data.EntityFramework.UnitOfWork
         private void EfUnitOfWorkObjectMaterialized(object sender, ObjectMaterializedEventArgs e)
         {
             var entity = e.Entity as IObjectWithChangeTracker;
-            if (entity != null)
+            if (entity == null) return;
+
+            bool changeTrackingEnabled = entity.ChangeTracker.ChangeTrackingEnabled;
+            try
             {
-                bool changeTrackingEnabled = entity.ChangeTracker.ChangeTrackingEnabled;
-                try
-                {
-                    entity.MarkAsUnchanged();
-                }
-                finally
-                {
-                    entity.ChangeTracker.ChangeTrackingEnabled = changeTrackingEnabled;
-                }
-                this.StoreReferenceKeyValues(entity);
+                entity.MarkAsUnchanged();
             }
+            finally
+            {
+                entity.ChangeTracker.ChangeTrackingEnabled = changeTrackingEnabled;
+            }
+            this.StoreReferenceKeyValues(entity);
         }
 
         #endregion
@@ -95,14 +94,14 @@ namespace Agathas.Storefront.Infrastructure.Data.EntityFramework.UnitOfWork
             SaveChanges();
 
             //accept all changes in STE entities attached in context
-            IEnumerable<IObjectWithChangeTracker> steEntities = (from entry in
-                                                                     ObjectStateManager.GetObjectStateEntries(~EntityState.Detached)
-                                                                 where
-                                                                    entry.Entity != null
-                                                                 &&
-                                                                    (entry.Entity as IObjectWithChangeTracker != null)
-                                                                 select
-                                                                    entry.Entity as IObjectWithChangeTracker);
+            var steEntities = (from entry in
+                                   ObjectStateManager.GetObjectStateEntries(~EntityState.Detached)
+                               where
+                                  entry.Entity != null
+                               &&
+                                  (entry.Entity as IObjectWithChangeTracker != null)
+                               select
+                                  entry.Entity as IObjectWithChangeTracker);
 
             steEntities.ToList().ForEach(ste => ste.MarkAsUnchanged());
         }
@@ -111,7 +110,7 @@ namespace Agathas.Storefront.Infrastructure.Data.EntityFramework.UnitOfWork
         {
             try
             {
-               Commit();
+                Commit();
             }
             catch (OptimisticConcurrencyException ex)
             {
@@ -123,14 +122,14 @@ namespace Agathas.Storefront.Infrastructure.Data.EntityFramework.UnitOfWork
                 SaveChanges();
 
                 //accept all changes in STE entities attached in context
-                IEnumerable<IObjectWithChangeTracker> steEntities = (from entry in
-                                                                         ObjectStateManager.GetObjectStateEntries(~EntityState.Detached)
-                                                                     where
-                                                                        entry.Entity != null
-                                                                     &&
-                                                                        (entry.Entity as IObjectWithChangeTracker != null)
-                                                                     select
-                                                                        entry.Entity as IObjectWithChangeTracker);
+                var steEntities = (from entry in
+                                       ObjectStateManager.GetObjectStateEntries(~EntityState.Detached)
+                                   where
+                                      entry.Entity != null
+                                   &&
+                                      (entry.Entity as IObjectWithChangeTracker != null)
+                                   select
+                                      entry.Entity as IObjectWithChangeTracker);
 
                 steEntities.ToList().ForEach(ste => ste.MarkAsUnchanged());
             }

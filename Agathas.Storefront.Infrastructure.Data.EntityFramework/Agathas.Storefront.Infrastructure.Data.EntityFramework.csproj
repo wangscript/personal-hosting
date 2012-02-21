@@ -49,11 +49,15 @@
       <DependentUpon>StorefrontDataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="UnitOfWork\EFUnitOfWork.cs" />
     <Compile Include="UnitOfWork\SelfTrackingEntitiesContextExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="Model\StorefrontDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>StorefrontDataModel.Designer.cs</LastGenOutput>
@@ -64,9 +68,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Agathas.Storefront.Domain.MainModule\Agathas.Storefront.Domain.MainModule.csproj">
+      <Project>{2C514FCD-23EB-4A39-91C0-FE733ED43885}</Project>
+      <Name>Agathas.Storefront.Domain.MainModule</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Agathas.Storefront.Domain\Agathas.Storefront.Domain.csproj">
       <Project>{EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B}</Project>
       <Name>Agathas.Storefront.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agathas.Storefront.Infrastructure.CrossCutting\Agathas.Storefront.Infrastructure.CrossCutting.csproj">
+      <Project>{E6CC176C-1CBA-4947-B6B6-51CD16501450}</Project>
+      <Name>Agathas.Storefront.Infrastructure.CrossCutting</Name>
     </ProjectReference>
     <ProjectReference Include="..\Agathas.Storefront.Infrastructure.Data\Agathas.Storefront.Infrastructure.Data.csproj">
       <Project>{C0CC74B4-297C-45E2-9379-613BE63E634B}</Project>

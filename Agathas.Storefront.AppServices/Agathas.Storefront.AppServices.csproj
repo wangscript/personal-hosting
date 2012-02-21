@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\Lib\AutoMapper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,8 +44,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMapperBootstrapper.cs" />
+    <Compile Include="Contracts\IProductCatalogService.cs" />
+    <Compile Include="Formatters\MoneyFormatter.cs" />
+    <Compile Include="Implemintations\ProductCatalogService.cs" />
+    <Compile Include="Mapping\CategoryMapper.cs" />
+    <Compile Include="Mapping\IProductAttributeMapper.cs" />
+    <Compile Include="Mapping\ProductMapper.cs" />
+    <Compile Include="Mapping\ProductTitleMapper.cs" />
+    <Compile Include="Messaging\ProductCatalog\GetAllCategoriesResponse.cs" />
+    <Compile Include="Messaging\ProductCatalog\GetFeaturedProductsResponse.cs" />
+    <Compile Include="Messaging\ProductCatalog\GetProductRequest.cs" />
+    <Compile Include="Messaging\ProductCatalog\GetProductResponse.cs" />
+    <Compile Include="Messaging\ProductCatalog\GetProductsByCategoryRequest.cs" />
+    <Compile Include="Messaging\ProductCatalog\GetProductsByCategoryResponse.cs" />
+    <Compile Include="Messaging\ProductCatalog\ProductsSortBy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CategoryView.cs" />
+    <Compile Include="ViewModels\ProductSizeOption.cs" />
+    <Compile Include="ViewModels\ProductSummaryView.cs" />
+    <Compile Include="ViewModels\ProductView.cs" />
+    <Compile Include="ViewModels\Refinement.cs" />
+    <Compile Include="ViewModels\RefinementGroup.cs" />
+    <Compile Include="ViewModels\RefinementGroupings.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agathas.Storefront.Domain.MainModule\Agathas.Storefront.Domain.MainModule.csproj">
+      <Project>{2C514FCD-23EB-4A39-91C0-FE733ED43885}</Project>
+      <Name>Agathas.Storefront.Domain.MainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agathas.Storefront.Domain\Agathas.Storefront.Domain.csproj">
+      <Project>{EEB6FF43-6CAB-439D-BF2B-E250B3A7F93B}</Project>
+      <Name>Agathas.Storefront.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agathas.Storefront.Infrastructure\Agathas.Storefront.Infrastructure.csproj">
+      <Project>{7282A017-F237-4581-899C-6C40C7C45A59}</Project>
+      <Name>Agathas.Storefront.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
