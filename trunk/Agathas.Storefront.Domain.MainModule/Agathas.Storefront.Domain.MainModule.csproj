@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\ICategoryRepository.cs" />
+    <Compile Include="Contracts\IProductRepository.cs" />
+    <Compile Include="Contracts\IProductTitleRepository.cs" />
     <Compile Include="Entities\Brand.cs">
       <DependentUpon>StorefrontUnitOfWork.Types.tt</DependentUpon>
     </Compile>
@@ -62,6 +64,8 @@
     <Compile Include="Contracts\IProductAttribute.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Color.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\ProductTitle.cs" />
     <Compile Include="Model\Size.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

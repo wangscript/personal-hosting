@@ -12,6 +12,7 @@
 
 using System;
 using System.Linq.Expressions;
+using Agathas.Storefront.Domain.Contracts;
 
 namespace Agathas.Storefront.Domain.Specifications
 {
@@ -22,8 +23,7 @@ namespace Agathas.Storefront.Domain.Specifications
     /// </summary>
     /// <typeparam name="TEntity">Type of entity that check this specification</typeparam>
     public sealed class DirectSpecification<TEntity>
-        : Specification<TEntity>
-        where TEntity : class
+        : Specification<TEntity>, ISpecification<TEntity> where TEntity : class
     {
         #region Members
 
