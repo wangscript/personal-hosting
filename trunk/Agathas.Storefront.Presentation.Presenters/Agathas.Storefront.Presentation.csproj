@@ -8,7 +8,7 @@
     <ProjectGuid>{0FBB5C1B-4856-4444-8F8D-F13A0EAE2480}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Agathas.Storefront.Presentation.Presenters</RootNamespace>
+    <RootNamespace>Agathas.Storefront.Presentation</RootNamespace>
     <AssemblyName>Agathas.Storefront.Presentation.Presenters</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsonDTOs\JsonProductSearchRequest.cs" />
+    <Compile Include="JsonDTOs\JsonRefinementGroup.cs" />
     <Compile Include="Presenters\BasePresenter.cs" />
+    <Compile Include="Presenters\HomePresenter.cs" />
     <Compile Include="Presenters\IPresenter.cs" />
+    <Compile Include="Presenters\ProductCatalogBasePresenter.cs" />
+    <Compile Include="Presenters\ProductCatalogPresenter.cs" />
+    <Compile Include="Presenters\ProductSearchPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\IBaseProductCatalogView.cs" />
+    <Compile Include="Views\IProductCatalogView.cs" />
     <Compile Include="Views\IHomePageView.cs" />
     <Compile Include="Views\IProductDetailView.cs" />
     <Compile Include="Views\IProductSearchResultView.cs" />
@@ -53,6 +60,10 @@
     <ProjectReference Include="..\Agathas.Storefront.AppServices\Agathas.Storefront.AppServices.csproj">
       <Project>{4ECFBA68-B797-4B95-B717-3B6DD32D98C8}</Project>
       <Name>Agathas.Storefront.AppServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agathas.Storefront.Infrastructure.CrossCutting\Agathas.Storefront.Infrastructure.CrossCutting.csproj">
+      <Project>{E6CC176C-1CBA-4947-B6B6-51CD16501450}</Project>
+      <Name>Agathas.Storefront.Infrastructure.CrossCutting</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
