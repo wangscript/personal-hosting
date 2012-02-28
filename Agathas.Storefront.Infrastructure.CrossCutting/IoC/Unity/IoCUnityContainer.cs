@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Configuration;
 using Agathas.Storefront.Infrastructure.CrossCutting.Resources;
@@ -131,6 +132,31 @@ namespace Agathas.Storefront.Infrastructure.CrossCutting.IoC.Unity
 
             return container.Resolve<TService>();
         }
+
+        public TService Resolve<TService>(Dictionary<string, object> paramsValue)
+        {
+            if (paramsValue == null) throw new ArgumentNullException("paramsValue");
+
+            string containerName = ConfigurationManager.AppSettings["defaultIoCContainer"];
+
+            if (String.IsNullOrEmpty(containerName)
+                ||
+                String.IsNullOrWhiteSpace(containerName))
+            {
+                throw new ArgumentNullException(Messages.exception_DefaultIOCSettings);
+            }
+
+            if (!_ContainersDictionary.ContainsKey(containerName))
+                throw new InvalidOperationException(Messages.exception_ContainerNotFound);
+
+            IUnityContainer container = _ContainersDictionary[containerName];
+
+            ResolverOverride[] resolverOverrides =
+                paramsValue.ToList().ConvertAll(item => new ParameterOverride(item.Key, item.Value)).ToArray();
+
+            return container.Resolve<TService>(resolverOverrides);
+        }
+
         /// <summary>
         /// <see cref="IContainer.Resolve"/>
         /// </summary>

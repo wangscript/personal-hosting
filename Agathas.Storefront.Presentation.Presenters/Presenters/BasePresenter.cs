@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Agathas.Storefront.Presentation.Presenters.Views;
 
-namespace Agathas.Storefront.Presentation.Presenters.Presenters
+namespace Agathas.Storefront.Presentation.Presenters
 {
-    public abstract class BasePresenter<TView> : IPresenter where TView : IView
+    public abstract class BasePresenter<TView> : IPresenter where TView : class, IView
     {
         protected BasePresenter(TView view)
         {
+            if (view == null) throw new ArgumentNullException("view");
+
             View = view;
         }
 

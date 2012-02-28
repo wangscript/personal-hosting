@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Agathas.Storefront.Infrastructure.CrossCutting.IoC
 {
@@ -13,6 +14,8 @@ namespace Agathas.Storefront.Infrastructure.CrossCutting.IoC
         /// <typeparam name="TService">Type of dependency</typeparam>
         /// <returns>instance of TService</returns>
         TService Resolve<TService>();
+
+        TService Resolve<TService>(Dictionary<string, object> paramsValue);
 
         /// <summary>
         /// Solve type construction and return the object as a TService instance

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Agathas.Storefront.AppServices.ViewModels;
 
-namespace Agathas.Storefront.Presentation.Presenters.Views
+namespace Agathas.Storefront.Presentation.Views
 {
-    public interface IProductSearchResultView : IBaseProductCatalogView
+    public interface IProductSearchResultView : IProductCatalogView
     {
         string SelectedCategoryName { get; set; }
         int SelectedCategory { get; set; }
@@ -11,6 +11,7 @@ namespace Agathas.Storefront.Presentation.Presenters.Views
         int NumberOfTitlesFound { get; set; }
         int TotalNumberOfPages { get; set; }
         int CurrentPage { get; set; }
+        int CategoryId { get; }
         IEnumerable<ProductSummaryView> Products { get; set; }
     }
 }

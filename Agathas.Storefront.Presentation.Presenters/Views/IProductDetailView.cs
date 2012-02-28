@@ -1,8 +1,8 @@
 ﻿using Agathas.Storefront.AppServices.ViewModels;
 
-namespace Agathas.Storefront.Presentation.Presenters.Views
+namespace Agathas.Storefront.Presentation.Views
 {
-    public interface IProductDetailView : IBaseProductCatalogView
+    public interface IProductDetailView : IProductCatalogView
     {
         ProductView Product { get; set; }
     }
