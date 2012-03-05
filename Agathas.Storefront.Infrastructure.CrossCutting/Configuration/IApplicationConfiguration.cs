@@ -2,6 +2,6 @@
 {
     public interface IApplicationConfiguration
     {
-        string NumberOfResultsPerPage { get; }
+        int NumberOfResultsPerPage { get; }
     }
 }

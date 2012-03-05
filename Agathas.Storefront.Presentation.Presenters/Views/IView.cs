@@ -1,4 +1,4 @@
-﻿namespace Agathas.Storefront.Presentation.Presenters.Views
+﻿namespace Agathas.Storefront.Presentation.Views
 {
     public interface IView
     {
