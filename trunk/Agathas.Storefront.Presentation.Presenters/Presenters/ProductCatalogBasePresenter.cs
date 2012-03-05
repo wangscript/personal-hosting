@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Agathas.Storefront.AppServices.Contracts;
 using Agathas.Storefront.AppServices.Messaging.ProductCatalog;
 using Agathas.Storefront.AppServices.ViewModels;
-using Agathas.Storefront.Presentation.Presenters.Views;
+using Agathas.Storefront.Presentation.Views;
 
 namespace Agathas.Storefront.Presentation.Presenters
 {

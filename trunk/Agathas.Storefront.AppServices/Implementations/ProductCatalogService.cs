@@ -3,6 +3,8 @@ using System.Linq;
 using Agathas.Storefront.AppServices.Contracts;
 using Agathas.Storefront.AppServices.Mapping;
 using Agathas.Storefront.AppServices.Messaging.ProductCatalog;
+using Agathas.Storefront.AppServices.ViewModels;
+using Agathas.Storefront.AppServices.Mapping;
 using Agathas.Storefront.Domain.MainModule.Contracts;
 using Agathas.Storefront.Domain.MainModule.Entities;
 using Agathas.Storefront.Domain.Specifications;
@@ -82,13 +84,13 @@ namespace Agathas.Storefront.AppServices.Implementations
         {
             if (request == null) throw new ArgumentNullException("request");
 
-            return new GetProductResponse
-                       {
-                           Product =
-                               _productRepository.GetBySpec(
-                                   new DirectSpecification<Product>(product => product.Id == request.ProductId))
-                               .SingleOrDefault()
-                       };
+            var response = new GetProductResponse();
+            var singleProduct = _productRepository.GetBySpec(new DirectSpecification<Product>(product => product.Id == request.ProductId)).SingleOrDefault();
+
+            if (singleProduct != null)
+                response.Product = singleProduct.ProductTitle.ConvertToProductDetailView();
+
+            return response;
         }
 
         public GetAllCategoriesResponse GetAllCategories()

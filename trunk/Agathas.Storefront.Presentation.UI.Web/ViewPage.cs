@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Web.UI;
 using Agathas.Storefront.Presentation.Presenters;
-using Agathas.Storefront.Presentation.Presenters.Views;
+using Agathas.Storefront.Presentation.Views;
 
 namespace Agathas.Storefront.Presentation.UI.Web
 {

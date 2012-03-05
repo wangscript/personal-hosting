@@ -10,9 +10,7 @@ namespace Agathas.Storefront.Presentation.Presenters
         {
            
         }
-
-        #region Overrides of BasePresenter<IHomePageView>
-
+  
         public override void OnViewLoad()
         {
             if (View.IsPostBack) return;
@@ -24,6 +22,5 @@ namespace Agathas.Storefront.Presentation.Presenters
             View.DataBind();
         }
 
-        #endregion
     }
 }

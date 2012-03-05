@@ -20,8 +20,11 @@ namespace Agathas.Storefront.Presentation.Presenters
         }
 
        
-        private void SearchProductResultViewFrom(GetProductsByCategoryResponse response)
+        private void SearchProductResultViewFrom()
         {
+            var productSearchRequest = GenerateInitialProductSearchRequest();
+            var response = ProductCatalogService.GetProductsByCategory(productSearchRequest);
+
             View.Categories = GetCategories();
             View.CurrentPage = response.CurrentPage;
             View.NumberOfTitlesFound = response.NumberOfTitlesFound;
@@ -30,6 +33,17 @@ namespace Agathas.Storefront.Presentation.Presenters
             View.SelectedCategory = response.SelectedCategory;
             View.SelectedCategoryName = response.SelectedCategoryName;
             View.TotalNumberOfPages = response.TotalNumberOfPages;
+        }
+
+        private GetProductsByCategoryRequest GenerateInitialProductSearchRequest()
+        {
+            return new GetProductsByCategoryRequest
+                       {
+                           NumberOfResultsPerPage = _configuration.NumberOfResultsPerPage,
+                           CategoryId = View.CategoryId,
+                           Index = 1,
+                           SortBy = ProductsSortBy.PriceHighToLow
+                       };
         }
     }
 }
