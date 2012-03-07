@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/Site.Master" AutoEventWireup="true" CodeBehind="ProductCatalog.master.cs" Inherits="Agathas.Storefront.Presentation.UI.Web.Shared.ProductCatalog" %>
+<%@Register src="Controls/Categories.ascx" tagPrefix="ctrl" tagName="Categories" %>
+
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+  <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+  </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="headerBasketSummary" ContentPlaceHolderID="headerBasketSummary" runat="server">
+</asp:Content>
+
+<asp:Content ID="MenuContent" ContentPlaceHolderID="MenuContent" runat="server">
+    <ctrl:Categories runat="server" ID="categories"/>
+</asp:Content>
+
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+     <asp:ContentPlaceHolder ID="MainContent" runat="server">
+</asp:ContentPlaceHolder>
+</asp:Content>
